@@ -2,13 +2,15 @@
 
 ### A Layered Model for Identity, Infrastructure, AI & Quantum-Era Defense
 
-Technical portfolio accompanying the book **Engineering Cyber Resilience** by **Sébastien Beyh, PhD**.
+**Technical portfolio accompanying the book _Engineering Cyber Resilience_ by Sébastien Beyh, PhD.**
 
-This repository presents the technical themes and engineering perspective associated with building resilience across identity, infrastructure, artificial intelligence and emerging quantum-era security requirements.
+This repository explores cyber resilience as a systems-engineering challenge involving identity, networks, computing infrastructure, applications, data, artificial intelligence and operational recovery.
 
-The central perspective is that cyber resilience is a systems engineering concern. Identity, networks, computing infrastructure, applications, data and intelligent systems interact through dependencies that can influence the impact, containment and recovery of security incidents.
+The central premise is that resilience depends not only on individual security controls, but also on the relationships, dependencies and trust boundaries connecting digital systems.
 
-**[View the book on Amazon](https://www.amazon.com/dp/B0HKM9PRBX)** · **[Explore the technical writing portfolio](https://github.com/sebastienbeyh/technical-writing-portfolio)**
+The material is intended for technology professionals, engineers, infrastructure architects, cybersecurity practitioners and readers interested in the engineering principles underlying resilient digital environments.
+
+**[View the book on Amazon](https://www.amazon.com/dp/B0HKM9PRBX)** · **[Explore the technical writing portfolio](https://github.com/sebastienbeyh/technical-writing-portfolio)** · **[Professional engagements on Upwork](https://www.upwork.com/freelancers/~01b87da47748e9829f)**
 
 ---
 
@@ -16,395 +18,288 @@ The central perspective is that cyber resilience is a systems engineering concer
 
 **Engineering Cyber Resilience: A Layered Model for Identity, Infrastructure, AI & Quantum-Era Defense**
 
-The book approaches cyber resilience as a layered engineering challenge rather than as a collection of isolated security controls.
+The book approaches cyber resilience through a layered systems perspective, examining how identity, infrastructure, applications, data and intelligent systems interact before, during and after disruptive security events.
 
-Modern digital environments depend on interconnected identities, networks, infrastructure, applications, data and intelligent systems. Resilience therefore requires consideration of how these layers interact before, during and after disruptive security events.
+The emphasis is on understanding dependencies, security boundaries, operational continuity, recovery and longer-term adaptation rather than treating cybersecurity as a collection of isolated controls.
 
-The layered perspective provides a framework for examining security boundaries, dependencies, operational continuity, recovery and longer-term adaptation.
-
-[**View on Amazon →**](https://www.amazon.com/dp/B0HKM9PRBX)
+[**View the book on Amazon →**](https://www.amazon.com/dp/B0HKM9PRBX)
 
 ---
 
-## 1. Cyber Resilience as a Systems Engineering Concern
+## 1. Cyber Resilience as a Systems-Engineering Challenge
 
-Cybersecurity traditionally places substantial emphasis on preventing unauthorized access and protecting systems from threats.
+Cybersecurity includes measures intended to protect systems against unauthorized access, misuse and disruption. Cyber resilience extends the engineering perspective to consider how essential capabilities can be maintained, restored and adapted when preventive controls are insufficient.
 
-Cyber resilience extends this perspective by considering the ability of an environment to:
+A resilience-oriented assessment considers the ability to:
 
-* Resist disruption.
-* Detect abnormal conditions.
-* Maintain essential functions.
-* Respond to incidents.
-* Recover affected capabilities.
-* Adapt following an event.
+- Prepare for plausible disruptions.
+- Protect assets and critical functions.
+- Detect abnormal conditions and security incidents.
+- Respond to and contain incidents.
+- Recover affected systems and services.
+- Validate restored capabilities.
+- Adapt architecture and procedures using lessons learned.
 
-Prevention remains important, but it cannot be treated as the sole basis of resilience. A resilient architecture also needs to consider what happens when a preventive control fails, a dependency becomes unavailable or an incident crosses an established security boundary.
-
-The engineering objective is to maintain or restore trusted operations while controlling the impact of disruption.
-
----
-
-## 2. A Layered Security Perspective
-
-Cyber resilience can be examined across interacting layers. The following structure is an engineering perspective for organizing analysis, not a claim that every environment must implement an identical architecture.
-
-### 2.1 Identity
-
-Identity establishes an important control boundary between people, services, applications and infrastructure.
-
-Relevant considerations include:
-
-* Authentication and authorization.
-* Privileged access management.
-* Identity lifecycle management.
-* Access governance.
-* Service and machine identities.
-* Trust relationships.
-* Revocation and recovery of compromised credentials.
-
-Identity compromise can enable access beyond the originally affected account or service. Analysis should therefore examine the permissions, trust relationships and downstream dependencies associated with each identity.
-
-### 2.2 Infrastructure
-
-Infrastructure provides the technical foundation on which applications, networks and services depend.
-
-Relevant areas include:
-
-* Computing infrastructure.
-* Network infrastructure.
-* Storage systems.
-* Cloud environments.
-* Data centers.
-* Operational technology.
-* Critical infrastructure.
-
-Resilience requires understanding component dependencies, common points of failure, recovery requirements and the consequences of losing shared infrastructure services.
-
-### 2.3 Networks
-
-Networks connect users, systems, applications and infrastructure.
-
-Important considerations include:
-
-* Network segmentation.
-* Secure connectivity.
-* Monitoring and traffic analysis.
-* Access control.
-* Network availability and redundancy.
-* Protection of critical communication paths.
-* Containment of incidents across network boundaries.
-
-Network architecture can influence how far an incident propagates and which services remain reachable during a disruption.
-
-### 2.4 Applications and Data
-
-Applications process information and provide business or operational capabilities. Data supports those capabilities and may itself require protection throughout its lifecycle.
-
-Relevant considerations include:
-
-* Application security.
-* Data confidentiality and integrity.
-* Availability.
-* Backup and recovery.
-* Secure development and maintenance.
-* Data access controls.
-* Dependencies on external services.
-* Restoration and validation of recovered information.
-
-Recovery should consider not only whether a system is running again, but also whether its data and operational state can be trusted.
-
-### 2.5 Operational Continuity and Recovery
-
-Operational continuity connects technical protection with the restoration of essential services.
-
-Relevant considerations include:
-
-* Identification of critical functions.
-* Service dependencies.
-* Recovery objectives.
-* Backup and restoration procedures.
-* Incident escalation.
-* Continuity arrangements.
-* Recovery validation.
-* Coordination between technical and operational teams.
-
-Recovery requirements should be derived from the needs of the specific environment rather than assumed to be identical across all systems.
+The objective is not to assume that every incident can be prevented. It is to understand the consequences of disruption and establish appropriate arrangements for containment, continuity and recovery.
 
 ---
 
-## 3. An Illustrative Layered Architecture
+## 2. A Layered Security and Resilience Perspective
 
-The following conceptual diagram shows how identity, infrastructure, applications, data and AI can be examined as connected parts of a digital environment.
+The following domains provide a practical structure for examining a digital environment. They are analytical categories, not a mandatory reference architecture.
+
+### Identity and Access
+
+Identity connects people, services and applications to permissions and trust relationships.
+
+Relevant considerations include authentication, authorization, privileged access, service identities, access governance, identity lifecycle management and the revocation or recovery of compromised credentials.
+
+The engineering question is not simply whether access controls exist, but whether their permissions and dependencies are appropriate to the system's intended operation.
+
+### Networks and Connectivity
+
+Networks connect users, applications, computing resources and infrastructure.
+
+Relevant considerations include segmentation, secure connectivity, monitoring, redundancy, availability and the containment of incidents across trust boundaries.
+
+Network architecture influences how an incident may propagate and which services remain reachable during disruption.
+
+### Computing and Infrastructure
+
+Computing, storage, cloud environments, data centers and operational technology provide foundations for digital and physical services.
+
+Resilience analysis should identify critical dependencies, shared services, potential common points of failure and the consequences of infrastructure loss.
+
+### Applications and Data
+
+Applications deliver business and operational capabilities, while data supports their functions and decisions.
+
+Relevant considerations include application security, data confidentiality and integrity, availability, access control, backup, restoration and dependencies on external services.
+
+Recovery must consider whether restored systems and information are trustworthy and suitable for their intended use—not merely whether the software starts successfully.
+
+### Operational Continuity and Recovery
+
+Technical protection must connect to the restoration of essential services.
+
+Important considerations include critical-function identification, recovery priorities, service dependencies, escalation arrangements, recovery objectives, restoration procedures and validation.
+
+Recovery requirements should reflect the needs and constraints of the specific environment rather than assumed universal targets.
+
+---
+
+## 3. Illustrative Systems Model
+
+Cyber resilience spans both technical domains and operational activities. The following conceptual diagram illustrates that relationship.
 
 ```text
-                CYBER RESILIENCE
-                       |
-       +---------------+---------------+
-       |               |               |
-     PREPARE          RESPOND         RECOVER
-       |               |               |
-       +---------------+---------------+
-                       |
-              SECURITY CONTROLS
-                       |
-       +---------------+---------------+
-       |               |               |
-    IDENTITY        NETWORKS      GOVERNANCE
-       |               |               |
-       +---------------+---------------+
-                       |
+                 CYBER RESILIENCE
+                        |
+       +----------------+----------------+
+       |                |                |
+    PREPARE           RESPOND           RECOVER
+       |                |                |
+       +----------------+----------------+
+                        |
+             CROSS-CUTTING CONCERNS
+                        |
+       +----------------+----------------+
+       |                |                |
+     IDENTITY         NETWORKS       GOVERNANCE
+       |                |                |
+       +----------------+----------------+
+                        |
                 INFRASTRUCTURE
-                       |
-       +---------------+---------------+
-       |               |               |
-     COMPUTE         STORAGE        CLOUD / OT
-                       |
+                        |
+       +----------------+----------------+
+       |                |                |
+     COMPUTE          STORAGE        CLOUD / OT
+                        |
                   APPLICATIONS
-                       |
+                        |
                       DATA
-                       |
+                        |
                        AI
-                       |
-          MONITORING AND VALIDATION
+                        |
+             MONITORING AND VALIDATION
 ```
 
-**Interpretation:** This diagram is a conceptual aid, not a normative reference architecture. It illustrates areas that should be considered together. Actual system boundaries, control placement, dependencies and recovery arrangements depend on the environment being assessed.
+**Interpretation:** This is a conceptual aid for organizing engineering analysis, not a normative architecture or a claim that every environment follows a strict layered stack. Actual component boundaries, dependencies, controls and recovery arrangements vary by implementation.
+
+Monitoring, validation, governance and recovery planning may span multiple domains rather than belonging to a single layer.
 
 ---
 
 ## 4. Artificial Intelligence and Cybersecurity
 
-Artificial intelligence introduces both security opportunities and additional engineering concerns.
+Artificial intelligence can support selected security activities, but AI adoption does not automatically improve resilience.
 
-AI can support activities such as:
+Potential applications include anomaly detection, security monitoring, pattern analysis, threat analysis and operational decision support. Some environments may also use automated response capabilities, subject to appropriate safeguards.
 
-* Anomaly detection.
-* Security monitoring.
-* Pattern analysis.
-* Threat analysis.
-* Operational decision support.
-* Selected automated response functions.
+AI-enabled systems introduce their own dependencies and failure modes. Relevant considerations include:
 
-However, introducing AI does not automatically improve security. AI-enabled systems have their own dependencies, failure modes and trust requirements.
+- Model integrity and provenance.
+- Training and operational data quality.
+- Unauthorized modification of models or inputs.
+- Adversarial manipulation.
+- Access to model interfaces and supporting infrastructure.
+- Protection of sensitive information.
+- Monitoring of model behavior.
+- Oversight of consequential automated decisions.
+- Fallback arrangements when AI components become unavailable or unreliable.
 
-Relevant considerations include:
-
-* Model integrity and provenance.
-* Training and operational data quality.
-* Unauthorized modification of models or inputs.
-* Adversarial manipulation.
-* Access to model interfaces and supporting infrastructure.
-* Protection of sensitive data.
-* Monitoring of model behaviour.
-* Human oversight of consequential automated decisions.
-* Safe operation when AI components become unavailable or unreliable.
-
-AI security should be considered alongside the security benefits AI may provide. Where AI supports security operations, its outputs should be evaluated in the context of system requirements, operational constraints and the consequences of incorrect decisions.
+Where AI supports security operations, its outputs should be assessed against operational requirements and the consequences of incorrect decisions. The design should account for both the capabilities AI may provide and the additional risks it introduces.
 
 ---
 
 ## 5. Critical Infrastructure Resilience
 
-Critical infrastructure presents demanding resilience requirements because disruption can affect essential services and interconnected systems.
+Critical infrastructure can have demanding resilience requirements because disruption may affect essential services and interconnected systems.
 
-Engineering considerations can include:
+Relevant engineering considerations include:
 
-* Availability and service continuity.
-* Redundancy and dependency analysis.
-* Network and system segmentation.
-* Monitoring and incident detection.
-* Recovery capability.
-* Incident response coordination.
-* Operational technology constraints.
-* Restoration of essential functions.
-* Validation of recovered systems.
+- Service availability and continuity.
+- Redundancy and dependency analysis.
+- Network and system segmentation.
+- Monitoring and incident detection.
+- Incident response coordination.
+- Operational technology constraints.
+- Restoration of essential functions.
+- Validation of recovered systems.
 
-A central concern is the propagation of failures or security incidents across interconnected infrastructure.
+A key concern is the propagation of failures across interconnected services. For example, an application may depend on identity infrastructure, communications, computing, storage and external providers. Failure in one shared dependency can affect several services even when their individual components remain operational.
 
-For example, a service may depend on identity infrastructure, communications, computing, storage and external providers. A failure in one shared dependency can affect multiple services even when their individual components remain operational.
-
-Resilience analysis should therefore examine the complete dependency chain, identify potential common points of failure and assess the consequences of losing critical shared services.
+Resilience analysis should therefore examine the dependency chain, identify potential common points of failure and assess the consequences of losing critical shared services.
 
 ---
 
 ## 6. Quantum-Era Security and Cryptographic Migration
 
-Quantum computing creates a longer-term consideration for cryptographic systems that rely on mathematical problems vulnerable to sufficiently capable quantum algorithms.
+Quantum computing raises longer-term concerns for cryptographic systems that rely on mathematical problems vulnerable to sufficiently capable quantum algorithms.
 
-The practical engineering challenge extends beyond selecting replacement algorithms. Organizations may need to identify affected cryptographic dependencies, plan migration and manage interoperability across complex environments.
+The engineering challenge extends beyond choosing replacement algorithms. Organizations may need to identify affected cryptographic dependencies, prioritize migration and manage interoperability across complex environments.
 
 Relevant considerations include:
 
-* Cryptographic inventories.
-* Identification of vulnerable algorithms and implementations.
-* Data requiring long-term confidentiality.
-* Cryptographic agility.
-* Protocol and application dependencies.
-* Hardware and software compatibility.
-* Vendor and supplier readiness.
-* Migration planning and testing.
-* Key management and certificate lifecycle implications.
+- Cryptographic inventories.
+- Identification of vulnerable algorithms and implementations.
+- Data requiring long-term confidentiality.
+- Cryptographic agility.
+- Protocol and application dependencies.
+- Hardware and software compatibility.
+- Vendor and supplier readiness.
+- Migration planning and testing.
+- Key management and certificate lifecycle implications.
 
-Migration planning should be based on a system-specific inventory and risk assessment. The relevant algorithms, implementation requirements and transition arrangements must be verified against authoritative, current cryptographic guidance.
+Migration planning should be based on a system-specific inventory and risk assessment. Algorithms, implementation requirements and transition arrangements should be verified against current authoritative cryptographic guidance.
 
-Quantum-safe migration should be treated as a lifecycle and architecture concern rather than an isolated software replacement.
-
----
-
-## 7. Resilience Engineering Across the Incident Lifecycle
-
-A useful way to organize resilience analysis is to examine the environment before, during and after a disruptive event.
-
-### Prepare
-
-Understand assets, system boundaries, dependencies, critical functions and plausible disruption scenarios.
-
-### Protect
-
-Implement controls appropriate to the assets, threat environment, operating requirements and risk tolerance.
-
-### Detect
-
-Identify abnormal conditions and security incidents using available monitoring, telemetry and analysis capabilities.
-
-### Respond
-
-Investigate and contain incidents, coordinate decisions and protect essential functions where possible.
-
-### Recover
-
-Restore affected capabilities in a controlled manner and validate the integrity and operational suitability of recovered systems.
-
-### Adapt
-
-Review incidents, identify weaknesses and update architecture, procedures, controls and recovery arrangements.
-
-These activities are related and may overlap. Their implementation should reflect the organization's operating environment, risk assessment and applicable requirements.
+Quantum-safe migration is therefore a lifecycle and architecture concern, not simply an isolated software replacement.
 
 ---
 
-## 8. Identity, Infrastructure, Data and AI Dependencies
+## 7. Dependencies, Incident Response and Recovery
 
 The interaction between identity, infrastructure, applications, data and AI can create complex security dependencies.
 
-Consider an illustrative scenario in which an identity service supports access to computing infrastructure, which in turn hosts applications and AI-enabled services.
-
-An identity-related incident may affect infrastructure access. Infrastructure disruption may affect application availability. Application disruption may interrupt data processing or AI-supported operations.
+Consider an illustrative environment in which identity services govern access to computing infrastructure, which hosts applications and AI-enabled services. An identity incident may affect infrastructure access; infrastructure disruption may affect application availability; application disruption may interrupt data processing or AI-supported operations.
 
 The consequences depend on the actual architecture, permissions, segmentation, redundancy and recovery arrangements.
 
-A useful engineering review therefore asks:
+A structured engineering review should ask:
 
 1. Which identities can access each critical component?
 2. Which services depend on shared infrastructure?
-3. Where can an incident propagate between trust boundaries?
-4. Which essential functions can continue during a disruption?
+3. Where can an incident propagate across trust boundaries?
+4. Which essential functions can continue during disruption?
 5. What evidence is required before restoring trust in a component?
 6. How are dependencies validated during recovery?
-7. What happens if a monitoring, identity or AI service becomes unavailable?
+7. What happens if an identity, monitoring or AI service becomes unavailable?
 
-These questions help translate a high-level resilience objective into architecture review, risk analysis and operational planning.
-
----
-
-## 9. Engineering Assessment Questions
-
-A structured assessment can use the following questions to examine resilience without assuming that one control or architecture is appropriate for every environment.
-
-| Assessment area       | Questions to examine                                                                          |
-| --------------------- | --------------------------------------------------------------------------------------------- |
-| Identity              | Are privileged and service identities governed, monitored and recoverable?                    |
-| Infrastructure        | Are critical dependencies, shared services and potential common points of failure understood? |
-| Networks              | Are trust boundaries and segmentation arrangements appropriate to the environment?            |
-| Applications and data | Can recovered systems and information be validated before returning to service?               |
-| AI systems            | Are model access, data dependencies, monitoring and fallback arrangements understood?         |
-| Critical functions    | Which services must remain available or be restored first?                                    |
-| Recovery              | Are recovery procedures tested against realistic dependencies and operating constraints?      |
-| Cryptography          | Is there sufficient visibility into cryptographic dependencies to plan future migration?      |
-| Governance            | Are responsibilities, escalation paths and recovery decisions clearly assigned?               |
-
-The assessment should record assumptions, evidence, limitations, risks and follow-up actions. Its conclusions should be proportionate to the information available.
+These questions help translate broad resilience objectives into architecture review, risk analysis and operational planning.
 
 ---
 
-## 10. Engineering Principles
+## 8. Engineering Assessment Framework
 
-The following principles summarize the systems perspective presented in this repository.
+The following questions can support a preliminary review. They are prompts for analysis, not a substitute for a complete risk assessment or formal security evaluation.
 
-**Treat resilience as a system property.**
-Security controls must be considered in the context of component interactions, dependencies and operational requirements.
+| Assessment domain | Questions to examine |
+|---|---|
+| Identity | Are privileged and service identities governed, monitored and recoverable? |
+| Infrastructure | Are critical dependencies and common points of failure understood? |
+| Networks | Are trust boundaries and segmentation appropriate to the environment? |
+| Applications and data | Can recovered systems and information be validated before returning to service? |
+| AI systems | Are model access, data dependencies, monitoring and fallback arrangements understood? |
+| Critical functions | Which services must remain available or be restored first? |
+| Recovery | Are recovery procedures tested against realistic dependencies and operating constraints? |
+| Cryptography | Are cryptographic dependencies sufficiently understood to plan future migration? |
+| Governance | Are responsibilities, escalation paths and recovery decisions clearly assigned? |
 
-**Make trust boundaries explicit.**
-Identity, network and application boundaries should be understood in relation to access, containment and recovery.
+A useful assessment records its assumptions, supporting evidence, limitations, identified risks and follow-up actions. Conclusions should be proportionate to the information available.
 
-**Plan for control failure.**
-Prevention is important, but incident response and recovery arrangements are also necessary.
+---
 
-**Understand dependencies.**
-Shared identity services, networks, infrastructure and external providers can influence the resilience of multiple systems.
+## 9. Engineering Principles
 
-**Validate recovery.**
+**Treat resilience as a system property.**  
+Assess controls in the context of component interactions, dependencies and operational requirements.
+
+**Make trust boundaries explicit.**  
+Understand identity, network and application boundaries in relation to access, containment and recovery.
+
+**Plan for control failure.**  
+Prevention remains important, but response, continuity and recovery arrangements are also necessary.
+
+**Understand shared dependencies.**  
+Identity services, networks, infrastructure and external providers can influence the resilience of multiple systems.
+
+**Validate recovery.**  
 Restoration should include appropriate checks that systems and data can be trusted for their intended use.
 
-**Treat AI as both a capability and a dependency.**
-AI may support monitoring and analysis, but its own security, reliability and failure behaviour must also be considered.
+**Treat AI as both a capability and a dependency.**  
+AI may support monitoring and analysis, but its own security, reliability and failure behavior must be considered.
 
-**Plan cryptographic transitions deliberately.**
+**Plan cryptographic transitions deliberately.**  
 Quantum-safe migration requires visibility, compatibility analysis, prioritization and controlled implementation.
 
-These are engineering principles for analysis and design. They are not guarantees of security or substitutes for environment-specific assessment and testing.
+These principles guide engineering analysis. They do not guarantee security or replace environment-specific assessment and testing.
 
 ---
 
-## 11. Technical Writing and Research Discipline
+## 10. Technical Writing and Research Discipline
 
-Technical claims about cybersecurity and resilience require careful treatment because technologies, threats, standards and recommended practices evolve.
+Cybersecurity and resilience claims require careful treatment because technologies, threats, standards and recommended practices evolve.
 
-The engineering approach used in this portfolio emphasizes:
+The technical writing approach represented in this portfolio emphasizes:
 
-* Clear definitions and consistent terminology.
-* Distinction between established principles, engineering practice and proposed approaches.
-* Explicit assumptions and limitations.
-* Traceable technical claims where authoritative sources are available.
-* Careful use of numerical values, standards and security terminology.
-* Recognition that implementation depends on system context and operational requirements.
+- Clear definitions and consistent terminology.
+- Distinction between established principles, engineering practice and proposed approaches.
+- Explicit assumptions and limitations.
+- Traceable technical claims where authoritative sources are available.
+- Careful use of numerical values, standards and security terminology.
+- Recognition that implementation depends on system context and operational requirements.
 
 Where an assignment requires formal standards alignment, detailed threat modelling, regulatory interpretation or independent technical validation, the scope and evidence requirements should be defined explicitly.
 
 ---
 
-## 12. Related Technical Work
+## Related Technical Work
 
-### Published Book
+- [**Engineering Writing Samples**](https://github.com/sebastienbeyh/engineering-writing-samples) - articles covering AI-RAN, 5G architecture, cyber resilience, solar PV and battery storage, and complex engineering systems.
+- [**Technical White Papers**](https://github.com/sebastienbeyh/technical-white-papers) - longer-form engineering analysis and architecture-oriented documents.
+- [**Technical Writing Portfolio**](https://github.com/sebastienbeyh/technical-writing-portfolio) - an overview of my writing focus and selected work.
+- [**Technical Ghostwriting**](https://github.com/sebastienbeyh/technical-ghostwriting) - information about technical manuscripts, white papers, articles and specialist content.
+- [**AI-RAN Engineering**](https://github.com/sebastienbeyh/ai-ran-engineering) - related material on AI-enabled radio network engineering.
 
-**Engineering Cyber Resilience: A Layered Model for Identity, Infrastructure, AI & Quantum-Era Defense**
+---
 
-[**View on Amazon →**](https://www.amazon.com/dp/B0HKM9PRBX)
+## Author
 
-### Technical Writing Portfolio
+**Sébastien Beyh, PhD**
 
-Explore technical writing across AI, telecommunications, energy, cybersecurity and complex engineering systems.
+Engineering professional and published technical author working across telecommunications, artificial intelligence, renewable energy, cybersecurity and complex technology systems.
 
-[**Open the Technical Writing Portfolio →**](https://github.com/sebastienbeyh/technical-writing-portfolio)
-
-### Engineering Writing Samples
-
-Browse articles on AI-RAN, 5G network architecture, cyber resilience, solar PV and battery energy storage, and complex engineering systems integration.
-
-[**Open Engineering Writing Samples →**](https://github.com/sebastienbeyh/engineering-writing-samples)
-
-### Technical White Papers
-
-Explore longer-form engineering analysis and architecture-focused technical content.
-
-[**Open Technical White Papers →**](https://github.com/sebastienbeyh/technical-white-papers)
-
-### Technical Ghostwriting
-
-Information about technical ghostwriting and support for engineering manuscripts, white papers, technical articles and specialist content.
-
-[**Open Technical Ghostwriting →**](https://github.com/sebastienbeyh/technical-ghostwriting)
+My technical writing focuses on architecture, system relationships, operational constraints and the engineering implications of emerging technologies.
 
 ---
 
@@ -412,8 +307,8 @@ Information about technical ghostwriting and support for engineering manuscripts
 
 Available for suitable contractual assignments involving technical writing, engineering white papers, technical reports, cybersecurity and cyber-resilience content, and specialist engineering publications.
 
-[**View my Upwork profile and services →**](https://www.upwork.com/freelancers/~01b87da47748e9829f)
+**[View my Upwork profile and services →](https://www.upwork.com/freelancers/~01b87da47748e9829f)**
 
 ---
 
-> **Cyber resilience is not achieved by a single control. It depends on how identity, infrastructure, data, applications and operations work together before, during and after disruption.**
+> Cyber resilience is not achieved by a single control. It depends on how identity, infrastructure, data, applications and operations work together before, during and after disruption.
